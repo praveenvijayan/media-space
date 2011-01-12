@@ -63,7 +63,7 @@ body{
 	background:#fff url(images/ajax-loader.gif) no-repeat center;
 }
 
-.content ul{
+.content ul#media-thumbs{
 	width:550px;
 	list-style:none;
 	padding:0;
@@ -71,6 +71,13 @@ body{
 	background:#ccc;
 	padding:10px 0;
 	float:left;
+}
+
+ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	width:100%;
 }
 
 a{
@@ -85,7 +92,7 @@ a:focus, a:active{
 	outline:none 0;	
 }
 
-.content li{
+#media-thumbs li{
 	width:80px;
 	margin-left:10px;
 	float:left;
@@ -96,7 +103,7 @@ a:focus, a:active{
 	display:block;	
 }
 
-.header, .content, .footer{
+.header, .content, .footer, .content-bottom{
 	margin:0 30px;	
 }
 
@@ -136,8 +143,8 @@ h2{
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-style:italic;
 	color:#444;
-	text-shadow: 0px 1px 0px #;
-	filter: dropshadow(color=#, offx=0, offy=1); 
+	text-shadow: 0px 1px 0px #fff;
+	filter: dropshadow(color=#fff, offx=0, offy=1); 
 	background:url(images/bg-line.gif) repeat-x 0 bottom;
 	padding:0 0 10px 0;
 	margin:0 0 10px 0;
@@ -171,6 +178,7 @@ h2{
 	margin:10px 0;
 	padding:0;
 	height:1px;
+	clear:both;
 }
 
 h3{
@@ -185,8 +193,16 @@ code{
 	border-radius: 5px; 
 	background:#f1f1f1 url(images/bg-cal-header.gif) repeat;
 	border:1px solid #ccc;
-	text-shadow: 0px 1px 0px #;
-	filter: dropshadow(color=#, offx=0, offy=1); 
+	text-shadow: 0px 1px 0px #fff;
+	filter: dropshadow(color=#fff, offx=0, offy=1); 
+}
+
+em{
+	color:#960;	
+}
+
+.footer{
+	height:150px;	
 }
 
 </style>
@@ -194,7 +210,7 @@ code{
 <script type="text/javascript" src="https://github.com/praveenvijayan/media-space/raw/master/jquery.mediaspace.js"></script>
 <script type="text/javascript">
 		$(function(){
-			$('ul').mediaspace({ title:true, firstitem:true, closetitle:true});
+			$('#media-thumbs').mediaspace({ title:true, firstitem:true, closetitle:true});
 		})
 	</script>
 </head>
@@ -205,7 +221,7 @@ code{
 		<a href="http://github.com/praveenvijayan/media-space/zipball/master" title="" class="download">Download</a> </div>
 	<div class="content">
 		<div id="main"> </div>
-		<ul>
+		<ul id="media-thumbs">
 			<li><a href="images/kovalam.jpg"><img src="images/thumb-kovalam.gif" width="80" height="66" alt="Image" title="Image" /></a>
 				<div class="media-caption">If you're writing javascript code, JSLint is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.</div>
 			</li>
@@ -225,7 +241,8 @@ code{
 				<div class="media-caption">I have a moneybookers account now as well, and you can try sending your love and support to einar@jsbeautifier.org through them. Let's see how that works out.</div>
 				</a></li>
 		</ul>
-	</div>
+
+ 	</div>
 	<div class="sidebar">
 	<h2>Dependencies</h2>
 	<ul>
@@ -244,7 +261,45 @@ code{
 	title:true
 });</code></pre>
 	</div>
-	<div class="footer"></div>
+
+<div class="content-bottom">
+
+<div class="spacer">&nbsp;</div>
+	<h2>Documentation</h2>
+	<ul>
+		<li>
+		<h3><em>Step 01</em> - Add scripts</h3>
+		<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;mediaspace.css&quot; type=&quot;text\css&quot; media=&quot;screen&quot; /&gt;<br />&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;<br /><em>//will work from jQuery 1.2</em><br />&lt;script src=&quot;jquery.mediaspace.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+		</code></pre>
+		</li>
+		<li>
+		<h3><em>Step 02</em> - Add HTML</h3>
+		<pre><code>&lt;div id=&quot;main&quot;&gt;&lt;/div&gt;<br /><em>The id of the container in which media should display</em><br />&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		</li>
+		<li>
+		<h3><em>Step 02</em> - Call mediaspace</h3>
+		<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+	$(function(){
+		$('.media ul').mediaspace();		   
+	})
+&lt;/script&gt;
+		</code></pre>
+		</li>
+		<li><a href="" title=""></a></li>
+		<li><a href="" title=""></a></li>
+		<li><a href="" title=""></a></li>
+	</ul>
+	
+</div>	
+
+	<div class="footer">&nbsp;</div>
 </div>
 </body>
 </html>
