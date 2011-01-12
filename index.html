@@ -127,6 +127,66 @@ a:focus, a:active{
 
 .content{
 	clear:both;	
+	width:550px;
+	float:left;
+}
+
+h2{
+	font-size:18px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	color:#444;
+	text-shadow: 0px 1px 0px #;
+	filter: dropshadow(color=#, offx=0, offy=1); 
+	background:url(images/bg-line.gif) repeat-x 0 bottom;
+	padding:0 0 10px 0;
+	margin:0 0 10px 0;
+}
+
+.sidebar{
+	width:340px;
+	float:left;
+}
+
+.sidebar ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.sidebar a{
+	font-size:12px;
+	color:#2d3536;
+	background:url(images/bg-connect-tooltip.gif) no-repeat 0 3px;
+	padding-left:20px;
+}
+
+.sidebar a:hover{
+	color:#C00;
+}
+
+.spacer{
+	font-size:0;
+	line-height:0;
+	margin:10px 0;
+	padding:0;
+	height:1px;
+}
+
+h3{
+	font-size:12px;
+	color:#666;
+}
+
+code{
+	display:block;
+	padding:10px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	background:#f1f1f1 url(images/bg-cal-header.gif) repeat;
+	border:1px solid #ccc;
+	text-shadow: 0px 1px 0px #;
+	filter: dropshadow(color=#, offx=0, offy=1); 
 }
 
 </style>
@@ -166,7 +226,24 @@ a:focus, a:active{
 				</a></li>
 		</ul>
 	</div>
-	<div class="sidebar"></div>
+	<div class="sidebar">
+	<h2>Dependencies</h2>
+	<ul>
+		<li><a href="" title="">jQuery</a></li>
+		<li><a href="" title="">jquery.mediaspace.js</a></li>
+		<li><a href="" title="">mediaspace.css</a></li>
+	</ul>
+	<div class="spacer">&nbsp;</div>
+	<h2>Usage</h2>
+	<h3>Basic usage</h3>
+	<pre><code>$('#media-container ul').mediaspace();</code></pre>
+	<h3>With options</h3>
+	<pre><code>$('#media-container ul').mediaspace({
+	container:'media-box',
+	fit:false,
+	title:true
+});</code></pre>
+	</div>
 	<div class="footer"></div>
 </div>
 </body>
