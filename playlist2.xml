@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<settings>
+		<auto_play>false</auto_play>
+		<keep_video_aspect>false</keep_video_aspect> <!-- fit video to the player size (by sqeezing) if set false. default false -->
+		<next_call>loadNext</next_call> <!-- js function name to call after showing this video -->
+	</settings>
+	<video id="0">
+		<duration>31</duration> <!-- in seconds -->
+		<preview_image>images/kadhakali.jpg</preview_image>
+		<source>videos/finding_nemo-dvd-now_480.flv</source>			
+	</video>
+	
+</data>

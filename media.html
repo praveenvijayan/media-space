@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Various development</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript" src="jquery.mediaspace.js"></script>
+<script type="text/javascript">
+			
+$(function(){						
+	$('ul').mediaspace({ title:true, firstitem:true, closetitle:true});
+})
+
+</script>
+<style type="text/css">
+#main {
+	width:500px;
+	height:400px;
+}
+
+li {
+	float:left;
+	margin-right:10px;
+}
+
+.media-caption{
+	width:200px;
+	display:none;
+}
+
+.md-caption{
+	border:1px solid #ccc;
+	background:#f1f1f1;
+	padding:10px;
+	font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+<div id="main"> </div>
+<ul>
+	<li><a href="http://www.youtube.com/watch?v=Mthrq0wZobE&feature=BF&list=QL&index=1&width=200&height=100"><img src="images/dragonfly.jpg" width="200" height="110" alt=" " title=" " />
+	<div class="media-caption">This popular web debugging proxy for Windows has a Javascript Formatter addon (based on this beautifier) which can reformat javascript on the fly.</div>
+	</a></li>
+	<li><a href="http://www.2xstream.co.uk/movs/H264Archive/Example_264_256kref.mov"><img src="images/grass-hoper.jpg" width="200" height="110" alt=" " title=" " /></a>
+	</li>
+	<li><a href="http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=792&amp;height=294"><img src="images/kadhakali.jpg" width="200" height="110" alt=" " title=" " />
+	<div class="media-caption">Aj3423 converted the script to vimscript — and so now there is a (somewhat unsupported) vim plugin for the quality javascript beautifying.</div>
+	</a></li>
+	<li><a href="images/dragonfly.jpg"><img src="images/love-birds.jpg" width="200" height="110" alt=" " title=" " /></a>
+	<div class="media-caption">If you're writing javascript code, JSLint is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.</div>
+	</li>
+	<li><a href="images/grass-hoper.jpg"><img src="images/nayar.jpg" width="200" height="110" alt=" " title=" " />
+	<div class="media-caption">If you find some problems with the generated javascript, adapt the script for your favorite editor, or want to say "hi", my email is einar@jsbeautifier.org.</div>
+	</a>
+	</li>
+	
+	<li><a href="video_player_v2.0.swf?flashvars=playList=playlist2.xml"><img src="images/dragonfly.jpg" width="200" height="110" alt=" " title=" " />
+	<div class="media-caption">I have a moneybookers account now as well, and you can try sending your love and support to einar@jsbeautifier.org through them. Let's see how that works out.</div>
+	</a></li>
+</ul>
+</body>
+</html>
