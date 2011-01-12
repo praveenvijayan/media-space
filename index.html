@@ -8,6 +8,7 @@
 html, body {
 	margin:0;
 	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,6 +35,7 @@ body{
 	padding:10px;
 	font-weight:bold;
 	position:absolute;
+	font-size:12px;
 	bottom:0;
 	padding:15px;
 	color:#fff;
@@ -42,11 +44,23 @@ body{
 	width:520px;
 }
 
+.closeTitle{
+	background:url(images/icon-caption-close.gif) no-repeat 0 0;
+	width:18px;
+	height:18px;
+	text-indent:-999em;
+	display:block;
+	position:absolute;
+	top:3px;
+	right:3px;
+}
+
 #main{
 	width:550px;
 	height:300px;
 	overflow:hidden;
 	position:relative;
+	background:#fff url(images/ajax-loader.gif) no-repeat center;
 }
 
 .content ul{
@@ -65,6 +79,10 @@ a{
 
 a img{
 	border:0;	
+}
+
+a:focus, a:active{
+	outline:none 0;	
 }
 
 .content li{
@@ -128,22 +146,22 @@ a img{
 	<div class="content">
 		<div id="main"> </div>
 		<ul>
+			<li><a href="images/kovalam.jpg"><img src="images/thumb-kovalam.gif" width="80" height="66" alt="Image" title="Image" /></a>
+				<div class="media-caption">If you're writing javascript code, JSLint is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.</div>
+			</li>
+			<li><a href="http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=550&amp;height=300">
+			<img src="images/thumb-flash.gif" width="80" height="66" alt="Adobe flash (swf)" title="Adobe flash (swf)" />
+<div class="media-caption">This is a flash file.</div>
+				</a></li>
 			<li><a href="http://www.youtube.com/watch?v=Mthrq0wZobE&feature=BF&list=QL&index=1&width=550&height=300">
 			<img src="images/thumb-youtube.gif" width="80" height="66" alt="You tube video" title="You tube video" />
 <div class="media-caption">This is a youtube video.</div>
 				</a></li>
 			<li><a href="http://www.2xstream.co.uk/movs/H264Archive/Example_264_256kref.mov"><img src="images/thumb-quicktime.gif" width="80" height="66" alt="Quick time video" title="Quick time video" /></a> </li>
-			<li><a href="http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=550&amp;height=300">
-			<img src="images/thumb-flash.gif" width="80" height="66" alt="Adobe flash (swf)" title="Adobe flash (swf)" />
-<div class="media-caption">This is a flash file.</div>
-				</a></li>
-			<li><a href="images/kovalam.jpg"><img src="images/thumb-kovalam.gif" width="80" height="66" alt="Image" title="Image" /></a>
-				<div class="media-caption">If you're writing javascript code, JSLint is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.</div>
-			</li>
 			<li><a href="images/image.jpg"><img src="images/thumb-jpg.gif" width="80" height="66" alt="Image" title="Image" />
 				<div class="media-caption">If you find some problems with the generated javascript, adapt the script for your favorite editor, or want to say "hi", my email is einar@jsbeautifier.org.</div>
 				</a> </li>
-			<li><a href="video_player_v2.0.swf?flashvars=playList=playlist2.xml"><img src="images/thumb-flv.gif" width="80" height="66" alt="Flash video" title="Flash video" />
+			<li><a href="video_player_v2.0.swf?flashvars=playList=playlist2.xml&width=550&height=300"><img src="images/thumb-flv.gif" width="80" height="66" alt="Flash video" title="Flash video" />
 				<div class="media-caption">I have a moneybookers account now as well, and you can try sending your love and support to einar@jsbeautifier.org through them. Let's see how that works out.</div>
 				</a></li>
 		</ul>

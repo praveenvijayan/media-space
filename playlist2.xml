@@ -7,7 +7,7 @@
 	</settings>
 	<video id="0">
 		<duration>31</duration> <!-- in seconds -->
-		<preview_image>images/kadhakali.jpg</preview_image>
+		<preview_image>images/Finding-Nemo.jpg</preview_image>
 		<source>videos/finding_nemo-dvd-now_480.flv</source>			
 	</video>
 	
