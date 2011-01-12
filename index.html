@@ -197,12 +197,29 @@ code{
 	filter: dropshadow(color=#fff, offx=0, offy=1); 
 }
 
+strong{
+	display:block;
+	color:#333;
+	padding:5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float:left;
+	width:150px;
+}
+
 em{
 	color:#960;	
 }
 
 .footer{
 	height:150px;	
+}
+
+.list li{
+	padding-bottom:5px;
+	font-size:13px;
+	float:left;
+	width:100%;
 }
 
 </style>
@@ -292,13 +309,22 @@ em{
 &lt;/script&gt;
 		</code></pre>
 		</li>
-		<li><a href="" title=""></a></li>
-		<li><a href="" title=""></a></li>
-		<li><a href="" title=""></a></li>
 	</ul>
-	
+<div class="spacer">&nbsp;</div>
+<h2>Options</h2>
+<ul class="list">
+	<li><strong>container : ' '</strong> <em>The id of the container in which media should display</em></li>
+	<li><strong>wmode: 'opaque'</strong>   <em>Set the flash wmode attribute </em></li>
+	<li><strong>autoplay: true</strong>  <em>Automatically start videos: True/False</em>  </li>
+	<li><strong>fit:false</strong>  <em>Fit image to container width and height. if set to false it will retain orginal width & height</em> </li>
+	<li><strong>default_width:500</strong> <em>Default width of the video, to change pass it as param (design.swf?width=792&amp;height=294)</em> </li>
+	<li><strong>default_height:400</strong>  <em>Default height of the video, to change pass it as param (video.mov?width=600&amp;height=200)</em>  </li>
+	<li><strong>title:false</strong> <em>If need to add title, set it to true</em></li> 
+	<li><strong>closetitle:false</strong> <em>Allows to close caption/title</em> </li>
+	<li><strong>firstitem:true</strong>  <em>Playes first item when loads</em> </li>
+</ul>
 </div>	
-
+<div class="spacer">&nbsp;</div>
 	<div class="footer">&nbsp;</div>
 </div>
 </body>
