@@ -1,134 +1,156 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>praveenvijayan/media-space @ GitHub</title>
+<style type="text/css">
+html, body {
+	margin:0;
+	padding:0;
+}
 
-	<title>praveenvijayan/media-space @ GitHub</title>
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #6f9380;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #906c7f; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #906c7f; }
-    h3 { text-align: center; color: #906c7f; }
-    a { color: #906c7f; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	#main {
-	width:500px;
-	height:400px;
-	}
-	
-	li {
-		float:left;
-		margin-right:10px;
-	}
-	
-	.media-caption{
-		width:200px;
-		display:none;
-	}
-	
-	.md-caption{
-		border:1px solid #ccc;
-		background:#f1f1f1;
-		padding:10px;
-		font-weight:bold;
-	}
-	</style>
-	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script> 
-	<script type="text/javascript" src="https://github.com/praveenvijayan/media-space/raw/master/jquery.mediaspace.js"></script> 
-		
-	<script type="text/javascript">
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:url(images/bg-body.gif) repeat-y center 0;	
+}
+
+.container{
+	width:980px;
+	margin:0 auto;
+}
+
+.media-caption {
+	width:200px;
+	display:none;
+}
+
+.md-caption {
+	border:1px solid #ccc;
+	background:#f1f1f1;
+	padding:10px;
+	font-weight:bold;
+	position:absolute;
+	bottom:0;
+	padding:15px;
+	color:#fff;
+	background:#333;
+	height:50px;
+	width:520px;
+}
+
+#main{
+	width:550px;
+	height:300px;
+	overflow:hidden;
+	position:relative;
+}
+
+.content ul{
+	width:550px;
+	list-style:none;
+	padding:0;
+	margin:0;
+	background:#ccc;
+	padding:10px 0;
+	float:left;
+}
+
+a{
+	text-decoration:none;	
+}
+
+a img{
+	border:0;	
+}
+
+.content li{
+	width:80px;
+	margin-left:10px;
+	float:left;
+	padding:0;
+}
+
+.content li img{
+	display:block;	
+}
+
+.header, .content, .footer{
+	margin:0 30px;	
+}
+
+.header{
+	background:url(images/bg-line.gif) repeat-x 0 bottom;
+	margin-bottom:30px;
+	float:left;
+	width:920px;
+}
+
+.logo{
+	width:164px;
+	height:28px;
+	background:url(images/logo-mediaspace.gif) no-repeat 0 0;
+	margin:15px;
+	text-indent:-999em;
+	float:left;
+}
+
+.download{
+	float:right;
+	background:url(images/btn-download.gif) no-repeat 0 0;
+	width:90px;
+	height:27px;
+	text-indent:-999em;
+	margin:15px 0 0 0;
+}
+
+.content{
+	clear:both;	
+}
+
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript" src="https://github.com/praveenvijayan/media-space/raw/master/jquery.mediaspace.js"></script>
+<script type="text/javascript">
 		$(function(){
 			$('ul').mediaspace({ title:true, firstitem:true, closetitle:true});
 		})
 	</script>
-	
 </head>
-
 <body>
-  <a href="http://github.com/praveenvijayan/media-space"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/praveenvijayan/media-space/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/praveenvijayan/media-space/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/praveenvijayan/media-space">media-space</a>
-      <span class="small">by <a href="http://github.com/praveenvijayan">praveenvijayan</a></span></h1>
-
-    <div class="description">
-      Media space is a jQuery gallery plugin to display mixed media in once place. Images, video and flash can be displayed in a single place. 
-    </div>
-
-    <h2>Authors</h2>
-<p>praveen vijayan (praveenv.vijayan@gmail.com)
-<br/>
-<br/>      </p>
-<h2>Contact</h2>
-<p>praveen vijayan (praveenv.vijayan@gmail.com)
-<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/praveenvijayan/media-space/zipball/master">zip</a> or
-      <a href="http://github.com/praveenvijayan/media-space/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/praveenvijayan/media-space</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/praveenvijayan/media-space">praveenvijayan/media-space</a>
-    </div>
-
-  </div>
-
-<div id="main"> </div>
-<ul>
-	<li><a href="http://www.youtube.com/watch?v=Mthrq0wZobE&feature=BF&list=QL&index=1&width=200&height=100"><img src="images/dragonfly.jpg" width="200" height="110" alt=" " title=" " />
-	<div class="media-caption">This popular web debugging proxy for Windows has a Javascript Formatter addon (based on this beautifier) which can reformat javascript on the fly.</div>
-	</a></li>
-	<li><a href="http://www.2xstream.co.uk/movs/H264Archive/Example_264_256kref.mov"><img src="images/grass-hoper.jpg" width="200" height="110" alt=" " title=" " /></a>
-	</li>
-	<li><a href="http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=792&amp;height=294"><img src="images/kadhakali.jpg" width="200" height="110" alt=" " title=" " />
-	<div class="media-caption">Aj3423 converted the script to vimscript — and so now there is a (somewhat unsupported) vim plugin for the quality javascript beautifying.</div>
-	</a></li>
-	<li><a href="images/dragonfly.jpg"><img src="images/love-birds.jpg" width="200" height="110" alt=" " title=" " /></a>
-	<div class="media-caption">If you're writing javascript code, JSLint is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.</div>
-	</li>
-	<li><a href="images/grass-hoper.jpg"><img src="images/nayar.jpg" width="200" height="110" alt=" " title=" " />
-	<div class="media-caption">If you find some problems with the generated javascript, adapt the script for your favorite editor, or want to say "hi", my email is einar@jsbeautifier.org.</div>
-	</a>
-	</li>
-	
-	<li><a href="video_player_v2.0.swf?flashvars=playList=playlist2.xml"><img src="images/dragonfly.jpg" width="200" height="110" alt=" " title=" " />
-	<div class="media-caption">I have a moneybookers account now as well, and you can try sending your love and support to einar@jsbeautifier.org through them. Let's see how that works out.</div>
-	</a></li>
-</ul>
-  
+<div class="container">
+	<div class="header">
+		<h1 class="logo">Media space</h1>
+		<a href="http://github.com/praveenvijayan/media-space/zipball/master" title="" class="download">Download</a> </div>
+	<div class="content">
+		<div id="main"> </div>
+		<ul>
+			<li><a href="http://www.youtube.com/watch?v=Mthrq0wZobE&feature=BF&list=QL&index=1&width=550&height=300">
+			<img src="images/thumb-youtube.gif" width="80" height="66" alt="You tube video" title="You tube video" />
+<div class="media-caption">This is a youtube video.</div>
+				</a></li>
+			<li><a href="http://www.2xstream.co.uk/movs/H264Archive/Example_264_256kref.mov"><img src="images/thumb-quicktime.gif" width="80" height="66" alt="Quick time video" title="Quick time video" /></a> </li>
+			<li><a href="http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=550&amp;height=300">
+			<img src="images/thumb-flash.gif" width="80" height="66" alt="Adobe flash (swf)" title="Adobe flash (swf)" />
+<div class="media-caption">This is a flash file.</div>
+				</a></li>
+			<li><a href="images/kovalam.jpg"><img src="images/thumb-kovalam.gif" width="80" height="66" alt="Image" title="Image" /></a>
+				<div class="media-caption">If you're writing javascript code, JSLint is a really fine piece of software, too. You don't have to follow its recommendations blindly, but understanding what it says about your code can greatly improve your skills.</div>
+			</li>
+			<li><a href="http://www.stylopk.com/wallpapers/big/ws_Scenic_Beauty_1280x1024.jpg"><img src="images/thumb-jpg.gif" width="80" height="66" alt="Image" title="Image" />
+				<div class="media-caption">If you find some problems with the generated javascript, adapt the script for your favorite editor, or want to say "hi", my email is einar@jsbeautifier.org.</div>
+				</a> </li>
+			<li><a href="video_player_v2.0.swf?flashvars=playList=playlist2.xml"><img src="images/thumb-flv.gif" width="80" height="66" alt="Flash video" title="Flash video" />
+				<div class="media-caption">I have a moneybookers account now as well, and you can try sending your love and support to einar@jsbeautifier.org through them. Let's see how that works out.</div>
+				</a></li>
+		</ul>
+	</div>
+	<div class="sidebar"></div>
+	<div class="footer"></div>
+</div>
 </body>
 </html>
