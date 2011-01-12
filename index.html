@@ -55,6 +55,10 @@ body{
 	right:3px;
 }
 
+.closeTitle:hover{
+	background-position:0 -25px;	
+}
+
 #main{
 	width:550px;
 	height:300px;
@@ -123,13 +127,21 @@ a:focus, a:active{
 	float:left;
 }
 
+a:hover .logo{
+	background:url(images/logo-mediaspace-on.gif) no-repeat 0 0;
+}
+
 .download{
 	float:right;
 	background:url(images/btn-download.gif) no-repeat 0 0;
 	width:90px;
-	height:27px;
+	height:29px;
 	text-indent:-999em;
 	margin:15px 0 0 0;
+}
+
+.download:hover{
+	background-position:0 -41px;	
 }
 
 .content{
@@ -208,7 +220,7 @@ strong{
 }
 
 em{
-	color:#960;	
+	color:#B00058;	
 }
 
 .footer{
@@ -233,8 +245,9 @@ em{
 </head>
 <body>
 <div class="container">
+<a href="http://github.com/praveenvijayan/media-space"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 	<div class="header">
-		<h1 class="logo">Media space</h1>
+		<a href="http://github.com/praveenvijayan/media-space"><h1 class="logo">Media space</h1></a>
 		<a href="http://github.com/praveenvijayan/media-space/zipball/master" title="" class="download">Download</a> </div>
 	<div class="content">
 		<div id="main"> </div>
@@ -292,12 +305,15 @@ em{
 		<li>
 		<h3><em>Step 02</em> - Add HTML</h3>
 		<pre><code>&lt;div id=&quot;main&quot;&gt;&lt;/div&gt;<br /><em>The id of the container in which media should display</em><br />&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;<br />    &lt;a href=&quot;images/big-image.jpg&quot; title=&quot;&quot;&gt; <br />        &lt;image src=&quot;images/thumb01.jpg&quot; width=&quot;100&quot; height=&quot;50&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;<br />    &lt;/a&gt;<br />&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;<br />    &lt;a href=&quot;http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=550&amp;height=300&quot; title=&quot;&quot;&gt; <br />        &lt;image src=&quot;images/thumb02.jpg&quot; width=&quot;100&quot; height=&quot;50&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;<br />    &lt;/a&gt;<br />&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;<br />    &lt;a href=&quot;video_player_v2.0.swf?flashvars=playList=playlist2.xml&width=550&height=300&quot; title=&quot;&quot;&gt; <br />        &lt;image src=&quot;images/thumb03.jpg&quot; width=&quot;100&quot; height=&quot;50&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;<br />    &lt;/a&gt;<br />&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;<br />    &lt;a href=&quot;http://www.2xstream.co.uk/movs/H264Archive/Example_264_256kref.mov&quot; title=&quot;&quot;&gt; <br />        &lt;image src=&quot;images/thumb04.jpg&quot; width=&quot;100&quot; height=&quot;50&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;<br />    &lt;/a&gt;<br />&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;<br />    &lt;a href=&quot;http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=550&amp;height=300&quot; title=&quot;&quot;&gt; <br />        &lt;image src=&quot;images/thumb05.jpg&quot; width=&quot;100&quot; height=&quot;50&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;<br />    &lt;/a&gt;<br />&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 		</li>
 		<li>
