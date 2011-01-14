@@ -1,4 +1,4 @@
-/* Mediaspace
+/* Mediaspace jQuery
  * http://www.decodize.com/mediaspace/
  *
  * Copyright (c) 2010 Dec decodize (http://www.decodize.com/)
