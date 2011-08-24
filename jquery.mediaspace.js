@@ -98,7 +98,7 @@
 			//Content width and height
 			contentWidth = $('#' + settings.container).width();
 			contentHeight = $('#' + settings.container).height();
- 			
+ 						
 			if(settings.firstitem){
 				findurl ($('a:first', obj));
 			}
@@ -121,7 +121,7 @@
 						title = "<div class='md-caption'>" + itemTitle.html() + "</div>" ;
 					}
 				}
-				
+				currentObj = $(objurl);
 				flip_getfiletypes(itemSrc, title);
 				typechk(itemSrc);
 				
@@ -173,10 +173,13 @@
 			
 				switch (flip_getfiletypes(itemSrc, title)){
 					case 'image':
+						objtitle = currentObj.find('img').attr('title');
+						objalt = currentObj.find('img').attr('alt');
+						
 						if(settings.fit){
 							toInject = "<img src='"+elem+"' width='"+contentWidth+"' height='"+contentHeight+"' alt='' title='' />";
 						}else{
-							toInject = "<img src='"+elem+"' />";
+							toInject = "<img src='"+elem+"' title='"+objtitle+"' alt='"+objalt+"' />";
 						}
 					break;
 				
