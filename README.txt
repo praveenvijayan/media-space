@@ -1,1 +1,1 @@
-Media space
+Media space :: Lightbox
